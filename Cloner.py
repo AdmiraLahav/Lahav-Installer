@@ -14,10 +14,11 @@ def explorer(target_dir):
 
 
 #pretty janky stuff, like Main(){} in C#
-# you cannot use paramaters defined outside yoour def, thats why we firstly use return and vars
+# you cannot use paramaters defined outside your def (unless we use global?), thats why we firstly use return and vars
 #and then we say, use these vars in this def
 #after this we call clone() with the vars we stored, and explorer() again with the vars we stored
 if __name__ == '__main__':
     repo_url,target_dir = setup()
     clone(repo_url,target_dir)
     explorer(target_dir)
+    
