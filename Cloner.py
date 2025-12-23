@@ -3,11 +3,13 @@ def setup():
     repo_url = input("Input url of the repo: \n")
     target_dir = "cloned_repo"
     return repo_url,target_dir
+
 #git clone the repo
 def clone(repo_url,target_dir):
     subprocess.run([
         "git", "clone", repo_url, target_dir
     ], check=True)
+    
 #open explorer and change dir to the cloned repo
 def explorer(target_dir):
     subprocess.run(["explorer.exe",f"{target_dir}"])
