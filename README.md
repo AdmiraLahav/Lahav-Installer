@@ -3,17 +3,12 @@ Cloner.py - clones a repo from a link and opens explorer on that folder
 
 # Action Tree
 
-- Start
-  - Validate input
-    - If valid
-      - Load config
-      - Execute main routine
-        - Success
-          - Log result
-          - Exit 0
-        - Failure
-          - Handle error
-          - Exit 1
-    - If invalid
-      - Show error
-      - Exit 1
+# Decision Tree
+
+- Check file exists?
+  - Yes
+    - Is compressed?
+      - Yes → Decompress
+      - No → Skip
+  - No
+    - Abort process
