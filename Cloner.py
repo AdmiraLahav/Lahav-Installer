@@ -10,9 +10,7 @@ def extract_repo_name(repo_url):
 
 #git clone the repo
 def clone(repo_url,target_dir):
-    subprocess.run([
-        "git", "clone", repo_url, target_dir
-    ], check=True)
+    subprocess.run(["git", "clone", repo_url, target_dir], check=True)
 
 #open explorer and change dir to the cloned repo
 def explorer(target_dir):
