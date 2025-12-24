@@ -1,12 +1,9 @@
 # My installer
 Cloner.py - clones a repo from a link and opens explorer on that folder
 
-- [ ] Initialize
-  - [ ] Read payload
-  - [ ] Decode base85
-  - [ ] Decompress lzma
-- [ ] Execute
-  - [ ] Run in memory
-  - [ ] Capture output
-- [ ] Cleanup
-  - [ ] Wipe temp data
+- [ ] Start
+  - [ ] run cloner.py
+    - [ ] clone the repo
+    - [ ] open explorer on that location
+  - [ ] run running_txt.py
+    - [ ] run code stored as text
