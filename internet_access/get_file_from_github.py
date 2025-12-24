@@ -1,5 +1,7 @@
 import requests
 #[url+username+repo]/raw/refs/heads/main[folder+file_name]
+
+#also       raw.githubusercontent.com/AdmiraLahav/Lahav-Samples/main/internet_access/cloner.py
 file_url = "https://github.com/AdmiraLahav/Lahav-Samples/raw/refs/heads/main/internet_access/cloner.py"
 output_file_name = "file.txt"
 
