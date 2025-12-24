@@ -17,7 +17,7 @@ def explorer(target_dir):
     subprocess.run(["explorer.exe",f"{target_dir}"])
 
 
-#pretty janky stuff, like Main(){} in C#
+#pretty janky stuff, like Main() in C#
 # you cannot use paramaters defined outside your def (unless we use global?), thats why we firstly use return and vars
 #and then we say, use these vars in this def
 #after this we call clone() with the vars we stored, and explorer() again with the vars we stored
